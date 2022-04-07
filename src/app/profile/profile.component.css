@@ -1,0 +1,10 @@
+table { color: aliceblue;
+      border: none;
+      margin-top: 15vh;
+}
+
+tr {border-bottom: 1px whitesmoke solid; 
+    border-top: 1px whitesmoke solid;
+}
+
+th { color: rgb(255, 145, 0); }

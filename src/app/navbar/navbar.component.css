@@ -1,0 +1,128 @@
+aside {
+      margin: 0% !important;
+      padding:0 ;
+}
+
+nav { 
+    background-color: #2B2E91;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+margin: 0%;
+padding:0 10% ;
+}
+
+div { 
+      display: flex;
+      align-items:center ;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0px 30px ;
+      margin: 0%;
+padding:0  ;
+      
+}
+
+span {color:#F98601 ; }
+h3 {color: #DFDDFC;
+      margin: 0%;
+      padding:0 ;
+font-size: 1.4rem;
+}
+
+i {
+    text-align: center;
+      font-size:1.8rem ;
+   color: #DFDDFC;
+   transition: .3s;
+   /* padding: 5px; */
+}
+
+i:hover { cursor: pointer;
+ color: #F98601;
+}
+
+
+ul {list-style-type: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    height: 93vh;
+    /* position: fixed; */
+    background-color: #2B2E91;
+    /* display: none; */
+}
+li {
+     width: 100%;
+
+}
+
+a {
+      display: inline-block;
+      font-weight: 600;
+       padding:  10px 5px ;
+      border-bottom: white 2px solid;
+      transition: all .3s ;
+      color: #DFDDFC;
+}
+a:hover {border-bottom: #F98601 solid 2px; 
+         color: #F98601;
+         text-decoration: none;
+}
+
+.login{
+      background-color: #252CC8;
+      border-radius: 25px;
+      border : none ;
+      padding: 10px 40px;
+      margin : 30px 2px 0;
+      
+}
+.login:hover {background-color: #F98601;
+      color: whitesmoke;
+      border: none;
+ }
+
+aside { margin: 30px 0;}
+
+@media (min-width: 768px) { 
+      i { display: none;}
+      nav {flex-direction: row; 
+          justify-content: space-around;
+          padding: 3px 15%;
+          background-color: #252dc800;
+          position: absolute;
+          height: 7vh;
+          margin: 20px ;
+      }
+
+      ul {display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         width: 90%;
+         padding:  5px 0 ;
+         height: auto;
+         background-color: #252dc800;
+      }
+      div {width : auto }
+      a { 
+            padding: 5px;
+          margin: 0%;
+      }
+      .login { margin: 0% 10px;
+             padding: 10px;
+             width : 100px  ;
+             display: inline-block;
+      }
+}
+
+@media (min-width: 1100px) { 
+ ul { width: 60%;
+}
+}
+

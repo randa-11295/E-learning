@@ -1,0 +1,75 @@
+section { height: 92vh;
+        padding-top: 7vh;
+}
+div {
+      height: 60%;
+      background-image: url(../../assets/images/angree.png);
+      background-position: top center;
+      background-size: contain;
+      background-repeat: no-repeat;
+}
+
+main { height: 40%;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       flex-direction: column;
+}
+
+h3 {  font-size: 2rem; 
+    color: whitesmoke;
+}
+h2 {font-size: 2.5rem;
+    color: whitesmoke ;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0%;
+    font-weight: 800;
+}
+a { padding: 10px 15px ;
+    color: white;
+    background-color: #F98601;
+    border-radius: 20px;
+    margin: 0 auto !important ;
+    display: block;
+    transition: .3s;
+    width: 70%;
+    text-align: center;  
+ }
+ 
+ a:hover {
+     text-decoration: none;
+     transform: scale(1.1);
+ }
+
+
+
+ @media (min-width : 768px) {
+     section { display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    div { width: 50%;
+          height: 100%;
+          background-position: center;
+    }
+    
+    main { 
+        height: 60%;
+        justify-content: space-around;
+    }
+
+    h3 { font-size: 3rem;}
+
+     
+ }
+
+
+ @media (min-width : 1100px) {
+     h2 {font-size: 4rem; }
+     main { width: 60%;}
+     a { font-size: 1.1rem; }
+     
+ }

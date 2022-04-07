@@ -1,0 +1,39 @@
+
+<main class="box">
+
+<table  class="table ">
+    <tr>
+        <th>name</th>
+        <td> {{user.name}}</td>
+  </tr>
+  <tr>
+    <th>E-mail</th>
+    <td>{{user.email}}</td>
+</tr>
+<tr>
+    <th >password</th>
+    <td >{{user.password}}</td>
+</tr>
+<tr>
+    <th >country</th>
+    <td >{{user.address.country}}</td>
+</tr>
+<tr>
+    <th>city</th>
+    <td >{{user.address.city}}</td>
+</tr>
+ <tr>
+    <th>street</th>
+    <td>{{user.address.street}}</td>
+</tr>
+
+<tr>
+    <th>last update</th>
+    <td>{{user.updatedAt}}</td>
+</tr>
+<tr>
+    <th>created</th>
+    <td>{{user.createdAt}}</td>
+</tr>
+</table>
+</main>

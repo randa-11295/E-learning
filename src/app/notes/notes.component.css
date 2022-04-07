@@ -1,0 +1,112 @@
+aside {
+         width : 100% ;
+        height: 50vh;
+        background-image: url(../../assets/images/fly.png);
+        background-position:center ;
+        background-size: contain;
+        background-repeat: no-repeat ;
+}
+
+
+section{ background-color: whitesmoke;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 60vh;
+        margin: 10px !important;
+}
+div { background-color: #6D70D5;
+       height: 25%;
+       display: flex;
+       padding-left: 15px;
+       align-items: center;
+}
+
+h3 { font-size: 1.5rem;
+    line-height: 2rem;
+    color: #F3EDD2;
+    text-transform: capitalize;
+    font-weight: 600;
+    word-spacing: .5px;
+}
+
+figcaption{ background-color: #F98601;
+padding: 5px;
+}
+
+main {
+    background-color: whitesmoke;
+margin: 0%;
+height: 70%;
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+padding-left: 15px;
+}
+
+
+p {
+line-height: 1.4rem ;
+}
+
+b { font-size: .8rem;
+  
+    display: block;
+    line-height: 1.4rem;
+}
+
+
+a { display: block;
+   padding: 10px ;
+   transition: .4s;
+   background-color: #F98601;
+   width: 70%;
+   text-align: center;
+   border-radius: 30px;
+   color: #F3EDD2;
+
+}
+
+a:hover { transform :scale(1.1);
+          text-decoration: none;
+}
+
+
+figure{display: block; 
+
+}
+@media (min-width :768px ) {
+    figure {       
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    }
+
+    aside {
+        height: 80vh;
+        background-size: cover;
+        width: 100%;
+    }
+
+    section { height: 70vh;  }
+   
+    
+}
+
+@media (min-width :1100px ) {
+      aside {width: 50%; }
+      figure { justify-content: space-between; }
+      section {width:40% ; }
+
+      section h3{ font-size: 1.8rem ;
+        line-height: 2.2rem;
+        letter-spacing: 2px;
+      }
+
+      section p { font-size: 1.1rem;
+                 line-height: 1.6rem ;
+                 letter-spacing: 1px;
+    }
+
+    section b { font-size: 1rem;}
+}

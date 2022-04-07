@@ -1,0 +1,57 @@
+section {display: flex ;
+   justify-content: space-around;
+   align-items: space-around;
+   flex-direction: column;       
+    min-height: 95vh; 
+}
+figcaption { background-image: url(../../assets/images/star.png);
+          background-position: top;
+          background-size: cover;
+
+}
+ nav { background-color: #2b2e91f1;}
+
+aside { background-color: #121D61;
+       padding: 20px 0;
+       background-image: url(../../assets/images/giphy.gif);
+
+}
+
+div { 
+  padding: 40px 20px !important ;
+  color: whitesmoke;
+  text-align: center;
+}
+
+div h2 { margin-bottom: 30px; 
+         text-transform: capitalize;
+}
+
+footer { text-align: center;
+         background-color: #131430e7 ;
+         text-align: center;
+         color:whitesmoke;
+         padding: 20px;
+}
+
+footer a {color: #FD9A15; 
+}
+
+
+@media (min-width: 768px) {
+    
+   section {
+            flex-direction: row-reverse;
+            align-items: center;
+}
+
+app-slider { width: 60%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+aside {padding: 40px 0; }
+}
+div{ padding: 70px 0; }
+
+

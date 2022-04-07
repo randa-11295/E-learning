@@ -1,0 +1,33 @@
+* {box-sizing: border-box;
+    padding: 0 ;
+    margin: 0   ;
+    margin-left: 0% !important ;
+    outline: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+html{scroll-behavior: smooth; 
+     background-color: #2B2E91;
+     margin: 0% ;
+}
+
+ol { margin: 0 auto !important; }
+body { margin: 0% ; }
+
+.box {margin: auto !important;
+  
+}
+
+@media (min-width: 576px) {
+.box {max-width: 540px;		
+}}
+@media (min-width: 768px) { 
+.box {max-width: 730px;
+}}
+@media (min-width: 992px) { 
+.box { max-width: 960px;
+}}
+@media (min-width: 1100px) { 
+.box {max-width: 1060px;
+}}
+

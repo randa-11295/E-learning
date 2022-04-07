@@ -1,0 +1,155 @@
+div { background-image: url("../../assets/images/5496386.jpg") ;
+     height : 80%; 
+     width: 100%;
+     position: absolute;
+     top: 0;
+     background-position:center ;
+     background-size: cover;
+     z-index: 1;
+     clip-path: polygon(0 0, 100% 0, 100% 25%, 0 100%, 0 100%);
+      
+}
+form { z-index: 2;
+    display: flex;
+    padding: 5px 20px ;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+    width: 80%;
+    margin: 10vh 20px 0 !important;
+    border-radius: 15px;
+    background-color: #1B1E75;
+    color: whitesmoke;
+    border: #F98601 solid 2px;
+
+    }
+    section { display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 85vh;
+    
+    
+    }
+    
+    input{padding: 2px; 
+        border-radius: 10px;
+        text-align: center;
+        transition:  .4s  ;
+        border: none;
+        outline: solid 3px #F98601;
+        background-color: rgba(248, 242, 232, 0);
+        color: whitesmoke;
+        font-size: .8rem;
+    }
+    
+     aside  fieldset { margin-bottom: 5px; }
+    input:focus{background-color: rgb(252, 222, 168) ;
+   color: black;}
+    
+  
+    
+    form p , label{ margin: 8px;
+      font-size:.8rem ;
+    }
+    
+    
+    
+    
+     button { width: 45%;
+      background-color: #F98601;
+               outline: none;
+               display: block;
+               margin:20px auto 0 !important;
+               border-radius: 7px;
+               padding: 10px 20px;
+               color: cornsilk;
+               border: none;
+               font-weight: 600;
+
+    
+    }
+    
+    button:hover { opacity: .7;}
+
+    form aside {  
+       display: flex;
+       flex-direction: column ;
+       justify-content: space-between;
+       align-items: center;
+    }
+    form aside  fieldset{display: flex;
+             justify-content: space-between;
+             align-items: center;
+             width: 100% ;  
+             border: none;   
+             padding: 0 0px 0 40px;
+             cursor: pointer;
+    }
+    form article { color: #F98601;
+      text-align: center;
+      height: 1rem;
+      line-height: 1rem;
+      font-size: .8rem;
+     
+    }
+    
+    form aside input {width: 50% ; }
+
+
+    
+@media (min-width: 768px) { 
+     
+    form { width: 50%;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin-top: 20vh !important;
+    }
+    
+    form input { padding: 5px;
+      margin: 0;
+    }
+    
+    form p , label { font-size: 1rem;
+   margin: 12px;
+   }
+
+    form aside { 
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 0 0;
+    }
+
+    form aside fieldset {
+   padding: 0;
+   margin: 0;
+   width: 30%;
+   flex-direction: column;
+   }
+
+   article { margin-top: 10px;  }
+
+   form aside fieldset input { width: 90%;};
+
+   button{
+      font-size: 1.2rem;
+   }
+}  
+   @media (min-width : 1100px) {
+
+
+      form{ width: 30%;
+         height: 90%;
+         justify-self: flex-end;
+         /* margin-top: vh ; */
+      }
+
+      div { 
+  
+         height: 90%;
+           background-position: center;
+
+      }
+
+   }
+   
+    

@@ -1,0 +1,113 @@
+
+section {
+    background-color: #2e34a2e3;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center ;
+    justify-content: center ;
+    border-bottom: #D3CAF4 1px solid;
+    border-top: #D3CAF4 1px solid;
+    position: relative;
+    overflow: hidden;
+    margin: 3rem auto 1rem  !important;
+}
+
+
+
+
+figcaption {
+    width: 180px;
+    height: 180px;
+    background-color: #3138bacb;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-right: #e0e2f7 1px solid;
+    border-left: #e0e2f7 1px solid;
+    margin: auto !important;
+}
+
+li { background-color: #F98601 !important}
+
+aside {
+    background-color: #4B52D7;
+    height: 100%;
+    width: 50%;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: circle;
+    animation-timing-function:linear;
+
+}
+
+figure{
+    position: absolute;
+    width: 100%;
+    max-height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+figure img { width: 100%;
+          margin-bottom: 10px;
+          padding: 0 !important;
+}
+
+
+figcaption {position: relative;
+            margin: 10%;
+            text-align: center;
+}
+figcaption button {
+    background-color :#464CCC ;
+    color: #e0e2f7;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 1rem;
+    margin:  0 5px ;
+    border: none;
+    transition: .3s;
+}
+figcaption button:hover { cursor: pointer;
+background-color: #F98601;
+}
+
+@keyframes circle {
+    0% { transform: rotate(0deg); }
+    100% {transform: rotate(360deg) }
+}
+
+
+@media (min-width:786px) {
+     section { height: 400px;
+    width: 400px;
+    margin: 0 ;
+    }
+    figcaption{ width: 250px;
+               height: 250px;
+    }
+
+
+
+}
+
+@media (min-width:1100px) {
+    section { height: 500px;
+   width: 500px;
+   margin: 0;
+   }
+   figcaption{ width: 300px;
+              height: 300px;
+   }
+
+
+   
+}

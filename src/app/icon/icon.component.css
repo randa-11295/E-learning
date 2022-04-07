@@ -1,0 +1,30 @@
+aside { width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+        border: solid 1px whitesmoke;
+        border-radius: 50%;
+        padding: 10px;
+        font-size: 1.2rem;
+        margin: 5px 10px;
+        transition: .3s;
+}
+
+section { display: flex;
+         align-items: center ;
+         justify-content: center;
+         padding: 40px 0px;
+}
+
+a {color: whitesmoke;
+transition: .3s; }
+aside:hover a { color: #FD9A15 ;
+                text-decoration: none;
+}
+
+aside:hover {
+    border: 1px #FD9A15 solid;
+    
+}

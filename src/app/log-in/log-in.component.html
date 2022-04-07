@@ -1,0 +1,19 @@
+<section class="box"  >
+   
+    <form [formGroup]="profileForm" (ngSubmit)="submiting()">
+
+   
+    <p>  E-mail </p>
+    <input name="email" formControlName="email" type="text">
+
+    <p>  password </p>
+    <input name="Name"  formControlName="password"   type="password">
+    
+
+    
+    <article>{{valid}}</article>
+    <button type="submit" [disabled]="!profileForm.valid"> submit </button>
+    
+    
+</form>
+</section>

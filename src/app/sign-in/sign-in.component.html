@@ -1,0 +1,37 @@
+<section   >
+    <div></div>
+    <form class="box" [formGroup]="profileForm">
+    <h3></h3>
+    <p>  Name </p>
+    <input name="Name"  formControlName="name"   type="text">
+    <p>  E-mail </p>
+    <input name="email" formControlName="email" type="text">
+    <p> password </p>
+    <input name="password"  formControlName="password" type="password"> 
+
+    
+    <p>Address</p>
+    
+    <aside formGroupName="address">
+        <fieldset>
+            <label for="street">Street: </label>
+            <input id="street" type="text" formControlName="street">      
+        </fieldset>
+        <fieldset>
+            <label for="city">City: </label>
+            <input id="city" type="text" formControlName="city">
+        </fieldset>
+        <fieldset>
+            <label for="country">country : </label>
+            <input id="country" type="text" formControlName="country">
+        </fieldset>
+
+    </aside>
+    
+    <article>{{vaild}}</article>
+    <button type="submit" > submit </button>
+    
+    
+</form>
+
+</section>

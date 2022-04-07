@@ -1,0 +1,18 @@
+section { padding-top: 10vh; }
+
+@media (min-width : 768px ) {
+     section { 
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     margin-top: 20px;
+    }
+    app-courses {width: 45%; }
+}
+
+@media (min-width : 1100px) {
+   section {justify-content: space-around; }
+    app-courses {  width: 30%;}
+    
+}
