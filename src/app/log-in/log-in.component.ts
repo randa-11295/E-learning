@@ -21,7 +21,7 @@ export class LogInComponent implements OnInit {
   
   profileForm = this.fb.group({
     password: ['' ,[ Validators.required ,]],
-    email : ['', [Validators.required]],
+    email : ['test', [Validators.required]],
 
   })
 
