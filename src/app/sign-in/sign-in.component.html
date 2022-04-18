@@ -1,6 +1,6 @@
 <section   >
     <div></div>
-    <form class="box" [formGroup]="profileForm">
+    <form class="box" (ngSubmit)="submiting()" [formGroup]="profileForm">
     <h3></h3>
     <p>  Name </p>
     <input name="Name"  formControlName="name"   type="text">
@@ -13,6 +13,7 @@
     <p>Address</p>
     
     <aside formGroupName="address">
+
         <fieldset>
             <label for="street">Street: </label>
             <input id="street" type="text" formControlName="street">      
@@ -29,7 +30,7 @@
     </aside>
     
     <article>{{vaild}}</article>
-    <button type="submit" (click)="submiting"> submit </button>
+    <button type="submit" > submit </button>
     
     
 </form>
