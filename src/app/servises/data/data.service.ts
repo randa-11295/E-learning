@@ -25,7 +25,7 @@ export class DataService {
   }
 
   cartCourses(id:string){
-    return this.http.post<any>(`${environment.Api}/library`, {_id:id} )    
+    return this.http.post<any>(`${environment.Api}/library`, {_id: id} )    
 
   }
 

@@ -5,54 +5,54 @@ import { DataService } from '../servises/data/data.service';
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
-  styleUrls: ['./courses.component.css']
+  styleUrls: ['./courses.component.css'],
 })
 export class CoursesComponent implements OnInit {
-  @Input() item:any ='test';
-   cart="";
-   constructor( private dataService:DataService , private localStorgeService:LocalStorgeService) { 
-  }
+  @Input() item: any = 'test';
+  cart = '';
+  constructor(
+    private dataService: DataService,
+    private localStorgeService: LocalStorgeService
+  ) {}
 
   ngOnInit(): void {
-    if(this.localStorgeService.getUser != null){
-            const cartArr = this.localStorgeService.getUser.cart
-          
-            if (cartArr.includes(this.item._id)){
-              this.cart="remove from my courses"
-            }
-            else {this.cart="add to my courses" }
-    }
+    if (this.localStorgeService.getUser != null) {
+      const cartArr = this.localStorgeService.getUser.cart;
 
+      if (cartArr?.includes(this.item._id)) {
+        this.cart = 'remove from my courses';
+      } else {
+        this.cart = 'add to my courses';
+      }
+     }
   }
-  
 
-  
-  addItem(id:string){
-    if(this.localStorgeService.getUser == null){
-       this.cart = "you must log in ftist"
+  addItem(id: string) {
+     console.log(id)
+    if (!this.localStorgeService.getUser ) {
+      this.cart = 'you must log in frist';
+    } else {
+      const userId = this.localStorgeService.getUser._id;
+
+      const courseId = id;
+      console.log(this.localStorgeService.getUser ,{ userId ,  courseId})
+      this.dataService.Cart({ userId: userId, courseId: courseId }).subscribe({
+        next: (data) => {
+          console.log(data.msg);
+          console.log(data.user);
+
+          if (data.msg == 'done added') {
+            this.cart = 'remove from my courses';
+          } else if (data.msg == 'done removed') {
+            this.cart = 'add to my courses';
+            console.log(this.cart);
+          }
+          this.localStorgeService.saveUserdata(data.user);
+        },
+        error: (err) => {
+          console.log(err);
+        },
+      });
     }
-    else {
-   const  userId= this.localStorgeService.getUser._id;
-   const  courseId = id;
-    this.dataService.Cart({userId :userId , "courseId" : courseId}).subscribe({
-      next:data=>{
-        console.log(data.msg);
-        console.log(data.user)
-        
-        if(data.msg=='done added'){
-           this.cart = "remove from my courses"
-        }
-        else if(data.msg=='done removed'){
-          this.cart = "add to my courses"
-          console.log(this.cart)
-        }
-        this.localStorgeService.saveUserdata(data.user);
-      },
-      error:err=> {  
-        console.log(err)
-       }
-
-       }
-    )}
-
-  }}
+  }
+}

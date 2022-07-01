@@ -1,6 +1,7 @@
 
 export const environment = {
   production: false,
-  Api : "https://e-learning-node-server.herokuapp.com/api",
+     Api : "http://localhost:3000/api" ,
+  // Api : "https://e-learning-node-server.herokuapp.com/api",
 };
 

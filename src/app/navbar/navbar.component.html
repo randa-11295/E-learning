@@ -1,27 +1,27 @@
+<nav>
+  <div>
+    <h3><span>R</span>anda</h3>
+    <aside
+      type="button"
+      (click)="collapse.toggle()"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample"
+    >
+      <i class="ri-menu-line"></i>
+    </aside>
+  </div>
 
-<nav  >
-       <div >
-           <h3> <span>R</span>anda</h3>    
-           <aside type="button" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
-           aria-controls="collapseExample">
-           
-           <i    class="ri-menu-line"></i>
-           </aside> 
-        </div>
-        
-        <ul  #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" >
-            <li><a routerLink="/">home</a>  </li>
-            <li><a routerLink="/courses">courses</a>  </li>
-            <li><a routerLink="/library">library</a>  </li>
-         <ng-container *ngIf="!isLog;else logout">
-            <li><a class="login"  routerLink="/login">log in</a>  </li>
-            <li><a class="login"  routerLink="/signup">sign up</a>  </li>
-         </ng-container>
-         <ng-template #logout>
-            <li><a class="login"  routerLink="/setting">Setting</a>  </li>
-        <a class="login" (click)="logOut()">Logout</a>
-         </ng-template>
-         
-         
-        </ul>
+  <ul #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+    <li><a routerLink="/">home</a></li>
+    <li><a routerLink="/courses">courses</a></li>
+    <li><a routerLink="/library">library</a></li>
+    <ng-container *ngIf="!isLog; else logout">
+      <li><a class="login" routerLink="/login">log in</a></li>
+      <li><a class="login" routerLink="/signup">sign up</a></li>
+    </ng-container>
+    <ng-template #logout>
+      <li><a class="login" routerLink="/setting">Setting</a></li>
+      <a class="login" (click)="logOut()">Logout</a>
+    </ng-template>
+  </ul>
 </nav>
